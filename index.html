@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- test
+    <div class="toggle-section">
+      <div class="btn-container">
+        <button
+          class="btn light-mode-toggle"
+          id="light-mode-toggle"
+          data-id="light"
+        >
+          1
+        </button>
+        <button
+          class="btn dark-mode-toggle"
+          id="dark-mode-toggle"
+          data-id="dark"
+        >
+          2
+        </button>
+        <button
+          class="btn purple-mode-toggle"
+          id="purple-mode-toggle"
+          data-id="purple"
+        >
+          3
+        </button>
+        <div class="ball contrast-btn"></div>
+      </div>
+    </div>
+
+    test -->
+
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator__header">
+          <h1 class="display-6">Calc</h1>
+          <div class="toggle-section">
+            <span>Theme</span>
+
+            <div class="btn-container">
+              <span class="btn-span">1 2 3</span>
+
+              <button
+                class="btn light-mode-toggle"
+                id="light-mode-toggle"
+                data-id="light"
+              ></button>
+
+              <button
+                class="btn dark-mode-toggle"
+                id="dark-mode-toggle"
+                data-id="dark"
+              ></button>
+
+              <button
+                class="btn purple-mode-toggle"
+                id="purple-mode-toggle"
+                data-id="purple"
+              ></button>
+              <div class="ball contrast-btn"></div>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <div id="history"><p id="history-value"></p></div>
+          <div id="output"><p id="output-value"></p></div>
+        </div>
+        <div class="main-body">
+          <div class="main-body__wrapper">
+            <div class="row">
+              <div class="col-3"><button id="7" class="number">7</button></div>
+              <div class="col-3"><button id="8" class="number">8</button></div>
+              <div class="col-3"><button id="9" class="number">9</button></div>
+              <div class="col-3">
+                <button class="different-clr-btn operator" id="backspace">
+                  DEL
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3"><button id="4" class="number">4</button></div>
+              <div class="col-3"><button id="5" class="number">5</button></div>
+              <div class="col-3"><button id="6" class="number">6</button></div>
+              <div class="col-3">
+                <button id="+" class="operator">+</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3"><button id="1" class="number">1</button></div>
+              <div class="col-3"><button id="2" class="number">2</button></div>
+              <div class="col-3"><button id="3" class="number">3</button></div>
+              <div class="col-3">
+                <button id="-" class="operator">-</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <button id="." class="operator">.</button>
+              </div>
+              <div class="col-3"><button id="0" class="number">0</button></div>
+              <div class="col-3">
+                <button id="/" class="operator">/</button>
+              </div>
+              <div class="col-3">
+                <button id="*" class="operator">x</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button class="different-clr-btn operator" id="clear">
+                  RESET
+                </button>
+              </div>
+              <div class="col-6">
+                <button class="contrast-btn operator" id="=">=</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+@import "./variablles", "./media-queries";
+body {
+  background-color: $bg;
+}
+
+// test
+
+// test /
+
+.container {
+  font-family: sans-serif;
+  height: 100vh;
+  // display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  width: 90vw;
+  .calculator {
+    background-color: $calculator-bg;
+    margin: 8vw;
+    .calculator__header {
+      // background-color: $calculator-inside;
+      color: $header-text;
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      margin: 0 auto;
+      // padding-bottom: 4vh;
+      // padding-top: 4vh;
+      padding: 4vh 10px;
+      font-weight: bold;
+
+      .toggle-section {
+        display: flex;
+        padding-top: 15px;
+        overflow: hidden;
+        span {
+          padding-right: 15px;
+        }
+
+        .btn-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background-color: var(--calculator-inside);
+          width: 80px;
+          height: 30px;
+          border-radius: 20px;
+
+          .btn-span {
+            font-size: 0.7rem;
+            position: absolute;
+            bottom: 30px;
+            word-spacing: 15px;
+            padding-left: 10px;
+          }
+          .btn {
+            background-color: var(--calculator-inside);
+            border-radius: 20px;
+            width: 25px;
+            height: 25px;
+            border: hidden;
+
+            &:focus {
+              border: hidden;
+              box-shadow: none;
+            }
+          }
+          .ball {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -11px;
+            margin-left: -11px;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            transition: 0.7s;
+          }
+          .ball-move-left {
+            margin-left: -35px !important;
+            transition: 0.7s;
+          }
+          .ball-move-right {
+            margin-left: 14px !important;
+            transition: 0.7s;
+          }
+
+          .contrast-btn {
+            background-color: $contrast-bg-color;
+            color: $different-btn-text-color;
+          }
+        }
+      }
+    }
+    .result {
+      width: 85%;
+      height: 12vh;
+      margin: 0 auto;
+      padding: 10px 20px;
+      margin-bottom: 5vh;
+      background-color: $calculator-inside;
+      border-radius: $main-border-radius;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      #history-value {
+        color: $header-text;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: bold;
+      }
+      #output-value {
+        color: $header-text;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: bold;
+      }
+    }
+    .main-body {
+      position: relative;
+      bottom: 10px;
+      background-color: $calculator-inside;
+
+      width: 85%;
+      margin: 0 auto;
+      border-radius: $main-border-radius;
+
+      // margin
+      .main-body__wrapper {
+        padding: 20px;
+      }
+      .row {
+        text-align: center;
+        padding: 1vh;
+        .col-3,
+        .col-6 {
+          padding: 0 0;
+          height: 7vh;
+
+          button {
+            border: none;
+            width: 85%;
+            height: 100%;
+            border-radius: $main-border-radius;
+            border-bottom: solid;
+            background-color: $btn-bg;
+            color: $btn-number-color;
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+          .different-clr-btn {
+            background-color: $different-btn-color;
+            color: $different-btn-text-color;
+          }
+          .contrast-btn {
+            background-color: $contrast-bg-color;
+            color: $different-btn-text-color;
+          }
+        }
+        .col-6 {
+          button {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./media-queries";

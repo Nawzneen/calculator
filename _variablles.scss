@@ -1,0 +1,59 @@
+:root,
+:root.light {
+  --bg: #222222;
+  --calculator-bg: #e6e6e6;
+  --calculator-inside: #d3cdcd;
+  --btn-bg: #e5e4e0;
+  --header-text: #2f2e29;
+  --btn-number-color: #2f2e29;
+  --btn-text-color: white;
+  --contrast-bg-color: #c85401;
+  --contrast-text-color: white;
+  --different-btn-color: #388187;
+  --different-btn-text-color: white;
+}
+:root.purple {
+  --bg: #222222;
+  --calculator-bg: #17062a;
+  --calculator-inside: #1e0836;
+  --btn-bg: #331b4d;
+  --header-text: #ffe342;
+  --btn-number-color: #ffe342;
+  --btn-text-color: white;
+  --contrast-bg-color: #00decf;
+  --contrast-text-color: black;
+  --different-btn-color: #56077c;
+  --different-btn-text-color: white;
+}
+:root.dark {
+  --bg: #222222;
+  --calculator-bg: #3b4664;
+  --calculator-inside: #181f32;
+  --btn-bg: #eae3db;
+  --header-text: #f9ffff;
+  --btn-number-color: #444a5a;
+  --btn-text-color: #f9ffff;
+  --contrast-bg-color: #d13f30;
+  --contrast-text-color: white;
+  --different-btn-color: #647299;
+  --different-btn-text-color: #f9ffff;
+}
+
+$bg: var(--calculator-bg);
+$calculator-bg: var(--calculator-bg);
+$calculator-inside: var(--calculator-inside);
+$btn-bg: var(--btn-bg);
+$header-text: var(--header-text);
+$btn-number-color: var(--btn-number-color);
+$btn-text-color: var(--btn-text-color);
+$contrast-bg-color: var(--contrast-bg-color);
+$contrast-text-color: var(--contrast-text-color);
+$different-btn-color: var(--different-btn-color);
+$different-btn-text-color: var(--different-btn-text-color);
+
+// @function set-text-color($color) {
+//   @if (lighness($color) >40) {
+//    $color
+//   }
+// }
+$main-border-radius: 6px;
